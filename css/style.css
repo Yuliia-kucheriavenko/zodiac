@@ -1,0 +1,86 @@
+:root {
+  --color1: #ffffff;
+  --color2: #000000;
+  --color3: #696969
+}
+
+.color1 {
+  color: var(--color1);
+}
+
+.color2 {
+  color: var(--color2);
+}
+
+.bg1 {
+background-color: var(--color1);
+}
+
+.bg2 {
+  background-color: var(--color2);
+  }
+
+header, footer, section {
+  padding: 100px 0;
+}
+
+header {
+  padding: 200px 0;
+}
+
+.wheremeets, .about, .videocontent{
+  background-color: #eee;
+}
+
+header, footer {
+  background: url(../img/roshel.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.btn-itd{
+  display: block;
+  max-width: 200px;
+  margin: 0 auto;
+  padding: 8px 30px;
+  color: var(--color2);
+  background-color: var(--color1);
+}
+
+.btn-itd:hover{
+  color: var(--color1);
+  background-color: var(--color2);
+}
+
+.videocontent-pre {
+  color: var(--color3);
+  font-size: 12px;
+
+}
+
+.wheremeets-title-pre {
+  color: var(--color3);
+  font-size: 16px;
+}
+
+.about-title-pre {
+  color: var(--color3);
+  font-size: 14px;
+}
+
+.about-pretext {
+  margin-bottom: 24px;
+  display: block;
+  max-width: 440px;
+}
+
+.brochure{
+  background-color:var(--color2);
+  color: #eee;
+}
+
+.brochure-text {
+  margin-top: 24px;
+  display: block;
+  max-width: 540px;
+}
