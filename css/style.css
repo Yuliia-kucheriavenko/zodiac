@@ -20,8 +20,12 @@ background-color: var(--color1);
   background-color: var(--color2);
   }
 
+html {
+    scroll-behavior: smooth;
+} 
+
 header {
-  padding: 20px 0;
+  padding: 10px 0;
   position: fixed;
   width: 100%;
   top: 0;
@@ -58,7 +62,7 @@ header, footer{
 
 .mainscreen {
   position: relative;
-  background: url(../img/f4.jpeg);
+  background: url(../img/mainscreen.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shorycut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/fontello.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Zodiac</title>
   </head>
@@ -13,7 +12,10 @@
     <header>
       <nav class="navbar navbar-expand-lg bg-black">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="./img/zodiaclogowhite.png" alt="" class="itd-logo"></a>
+          <a class="navbar-brand" href="#mainscreen"><img src="./img/zodiaclogowhite.png" alt="" class="itd-logo"></a>
+          <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <a class="nav-link text-white" href="#" onclick="showSection('home')">Home</a>
@@ -28,7 +30,7 @@
     
     <main>
       <section id="home" class="page-section">
-        <section class="mainscreen">
+        <section class="mainscreen" id="mainscreen">
           <div class="container">
             <div class="row">
               <div class="col-xl-12 col-md-12 col-sm-3">
@@ -100,7 +102,7 @@
                 <img src="img/roshelcompany.jpg" alt="proces" class="img-fluid mb-3 mb-md-5">
               </div>
               <div class="col-lg-5 col-md-12">
-                <h3 class="about-title-pre">Innovative business</h3>
+                <h3 class="about-title-pre text-uppercase">Innovative business</h3>
                 <h4 class="fw-bold about-pretext">“Our armored vehicles will ensure your security and protection.”</h4>
                 <p>
                   Zodiac Engineering is a manufacturer of various types of special armored vehicles. We supply our products all over the world. To government agencies, private security companies, and individuals.
@@ -137,27 +139,27 @@
             </div>
             <div class="row align-items-center">
               <div class="col align-items-center text-center">
-                <img src="img/partner1.jpeg" alt="proces" class="img-fluid itd-img ">
+                <img src="img/partner1.jpg" alt="proces" class="img-fluid itd-img">
                 <div class="p-3 fw-semibold text-secondary">Titus steel</div>
               </div>
               <div class="col align-items-center text-center">
-                <img src="img/partner2.jpeg" alt="proces" class="img-fluid itd-img">
+                <img src="img/partner2.jpg" alt="proces" class="img-fluid itd-img">
                 <div class="p-3 fw-semibold text-secondary">Horstman</div>
               </div>
               <div class="col align-items-center text-center">
-                <img src="img/partner3.jpeg" alt="proces" class="img-fluid itd-img">
+                <img src="img/partner3.jpg" alt="proces" class="img-fluid itd-img">
                 <div class="p-3 fw-semibold text-secondary">ProTEK</div>
               </div>
               <div class="col align-items-center text-center">
-                <img src="img/partner4.jpeg" alt="proces" class="img-fluid itd-img">
+                <img src="img/partner4.jpg" alt="proces" class="img-fluid itd-img">
                 <div class="p-3 fw-semibold text-secondary">NamcoJororn</div>
               </div>
               <div class="col align-items-center text-center">
-                <img src="img/partner5.jpeg" alt="proces" class="img-fluid itd-img">
+                <img src="img/partner5.jpg" alt="proces" class="img-fluid itd-img">
                 <div class="p-3 fw-semibold text-secondary">TriMark</div>
               </div>
               <div class="col align-items-center text-center">
-                <img src="img/partner6.jpeg" alt="proces" class="img-fluid itd-img ">
+                <img src="img/partner6.jpg" alt="proces" class="img-fluid itd-img ">
                 <div class="p-3 fw-semibold text-secondary">Hutchinson</div>
               </div>
             </div>
@@ -206,38 +208,75 @@
   
   
       <section id="gallery" class="page-section" style="display: none;">
+          <div class="container mb-5">
+              <div class="row pt-5">
+                <div class="col-12">
+                  <h2 class="text-center text-uppercase mt-5 mb-5 fw-semibold">Gallery</h2>
+                </div>
+              </div>
+              <div class="row text-center gap-5">
+                <div class="col-md-12 col-lg-12 align-items-center">
+                  <div class="col"> 
+                    <img src="./img/senatorapc.jpg" alt="" class="img-fluid">
+                  </div>
+                  <div class="p-3 fw-semibold text-secondary">Senator APC</div>
+                </div>
+                <div class="col-md-12 col-lg-12 align-items-center">
+                  <div class="col"> 
+                    <img src="./img/senatorerv.jpg" alt="" class="img-fluid">
+                  </div>
+                  <div class="p-3 fw-semibold text-secondary">Senator ERV</div>
+                </div>
+                <div class="col-md-12 col-lg-12 align-items-center">
+                  <div class="col"> 
+                    <img src="./img/senatormrap.jpg" alt="" class="img-fluid">
+                  </div>
+                  <div class="p-3 fw-semibold text-secondary">Senator MRAP</div>
+                </div>
+                
+                <div class="col-md-12 col-lg-12 align-items-center">
+                  <div class="col"> 
+                    <img src="./img/armored-suvs-1024x682.jpg" alt="" class="img-fluid">
+                  </div>
+                  <div class="p-3 fw-semibold text-secondary">Armored Vans</div>
+                </div>
+              </div>
+              
+              
+          </div>
       </section>
   
-      <section id="projects" class="page-section" style="display: none;">
+      <section id="projects" class="page-section pt-5" style="display: none;">
         <div class="container">
-          <div class="row align-items-center mb-5 mt-5">
-            <div class="col-lg-7 col-md-12 text-center">
-              <img src="img/roshelcompany.jpg" alt="proces" class="img-fluid mb-3 mb-md-5">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="text-center text-uppercase mb-5 fw-semibold mt-5">Projects</h2>
             </div>
-            <div class="col-lg-5 col-md-12">
-              <h3 class="about-title-pre">Innovative business</h3>
-              <h4 class="fw-bold about-pretext">“Our armored vehicles will ensure your security and protection.”</h4>
+          </div>
+          <div class="row align-items-center mb-5 mt-5">
+            <div class="col-lg-6 col-md-12">
+              <h3 class="about-title-pre">MODULAR SOLUTION FOR YOUR OPERATIONAL NEEDS</h3>
+              <h4 class="fw-bold about-pretext">Military and Law Enforcement Vehicles</h4>
               <p>
-                Zodiac Engineering is a manufacturer of various types of special armored vehicles. We supply our products all over the world. To government agencies, private security companies, and individuals.
-                Zodiac Engineering armored vehicles range includes SUVs, cash-in-transit vehicles, and armored personnel carriers for cargo transportation and delivery of quick response teams to destinations.
-                Our competitive advantage is in individual approach to each client and guarantee of our specialists in timely and high-quality execution of orders. Representatives of our company are ready to provide more detailed information on the production and answer all your questions.
+                Roshel Smart Armored Vehicles designs and manufactures an extensive line of smart emergency response vehicles utilized by military and law enforcement agencies and first responders throughout Canada and the United States. Roshel emergency response vehicles provide an unmatched level of protection and durability, supporting first responders in accomplishing their missions.
               </p>
+            </div>
+            <div class="col-lg-6 col-md-12 text-center">
+              <img src="img/armored-suvs-1024x682.jpg" alt="proces" class="img-fluid mb-3 mb-md-5">
             </div>
           </div>
         </div>
   
         <div class="container">
           <div class="row align-items-center mb-5">
-            <div class="col-lg-7 col-md-12 text-center">
-              <img src="img/roshelcompany.jpg" alt="proces" class="img-fluid mb-3 mb-md-5">
+            <div class="col-lg-6 col-md-12 text-center">
+              <img src="img/senatorapc.jpg" alt="proces" class="img-fluid mb-3 mb-md-5">
             </div>
-            <div class="col-lg-5 col-md-12">
-              <h3 class="about-title-pre">Innovative business</h3>
-              <h4 class="fw-bold about-pretext">“Our armored vehicles will ensure your security and protection.”</h4>
+            <div class="col-lg-6 col-md-12">
+              <h3 class="about-title-pre text-uppercase">Secured Transportation</h3>
+              <h4 class="fw-bold about-pretext">“Smart Solutions for Secured Transportation”</h4>
               <p>
-                Zodiac Engineering is a manufacturer of various types of special armored vehicles. We supply our products all over the world. To government agencies, private security companies, and individuals.
-                Zodiac Engineering armored vehicles range includes SUVs, cash-in-transit vehicles, and armored personnel carriers for cargo transportation and delivery of quick response teams to destinations.
-                Our competitive advantage is in individual approach to each client and guarantee of our specialists in timely and high-quality execution of orders. Representatives of our company are ready to provide more detailed information on the production and answer all your questions.
+                We understand that in the world of secured transportation, having as much detailed information about potential threats in real-time dramatically improves the safety of personnel and goods in transit. We provide our clients with onboard access control systems, and remote monitoring capabilities, offering instant situational awareness for dispatch personnel.
               </p>
             </div>
           </div>
@@ -245,32 +284,28 @@
         
         <div class="container">
           <div class="row align-items-center mb-5">
-            <div class="col-lg-7 col-md-12 text-center">
-              <img src="img/roshelcompany.jpg" alt="proces" class="img-fluid mb-3 mb-md-5">
-            </div>
-            <div class="col-lg-5 col-md-12">
-              <h3 class="about-title-pre">Innovative business</h3>
-              <h4 class="fw-bold about-pretext">“Our armored vehicles will ensure your security and protection.”</h4>
+            <div class="col-lg-6 col-md-12">
+              <h3 class="about-title-pre">ARMORED PERSONNEL CARRIER</h3>
+              <h4 class="fw-bold about-pretext">Senator APC</h4>
               <p>
-                Zodiac Engineering is a manufacturer of various types of special armored vehicles. We supply our products all over the world. To government agencies, private security companies, and individuals.
-                Zodiac Engineering armored vehicles range includes SUVs, cash-in-transit vehicles, and armored personnel carriers for cargo transportation and delivery of quick response teams to destinations.
-                Our competitive advantage is in individual approach to each client and guarantee of our specialists in timely and high-quality execution of orders. Representatives of our company are ready to provide more detailed information on the production and answer all your questions.
+                The Senator APC is a Roshel’s flagship model which has been specifically designed for law enforcement  and border patrol operations. It is a multi-purpose highly customizable modular platform capable of serving various scenarios and applications. This high performance multi-purpose armored personnel carrier has been trusted by largest North American law enforcement agencies.
               </p>
+            </div>
+            <div class="col-lg-6 col-md-12 text-center">
+              <img src="img/senatormrap.jpg" alt="proces" class="img-fluid mb-3 mb-md-5">
             </div>
           </div>
         </div>
         <div class="container">
           <div class="row align-items-center mb-5">
-            <div class="col-lg-7 col-md-12 text-center">
-              <img src="img/roshelcompany.jpg" alt="proces" class="img-fluid mb-3 mb-md-5">
+            <div class="col-lg-6 col-md-12 text-center">
+              <img src="img/emergency-response-1024x682.jpg" alt="proces" class="img-fluid mb-3 mb-md-5">
             </div>
-            <div class="col-lg-5 col-md-12">
-              <h3 class="about-title-pre">Innovative business</h3>
-              <h4 class="fw-bold about-pretext">“Our armored vehicles will ensure your security and protection.”</h4>
+            <div class="col-lg-6 col-md-12">
+              <h3 class="about-title-pre">EMERGENCY RESPONSE VEHICLE</h3>
+              <h4 class="fw-bold about-pretext">Senator ERV</h4>
               <p>
-                Zodiac Engineering is a manufacturer of various types of special armored vehicles. We supply our products all over the world. To government agencies, private security companies, and individuals.
-                Zodiac Engineering armored vehicles range includes SUVs, cash-in-transit vehicles, and armored personnel carriers for cargo transportation and delivery of quick response teams to destinations.
-                Our competitive advantage is in individual approach to each client and guarantee of our specialists in timely and high-quality execution of orders. Representatives of our company are ready to provide more detailed information on the production and answer all your questions.
+                The Roshel’s primary ERV has been specifically designed to provide emergency response and rescue services.   This modular platform ensures that first responders are protected and equipped with everything required to get their job done safely and efficiently. The Senator ERV has proved to be a valuable asset to multiple communities across North America. 
               </p>
             </div>
           </div>
