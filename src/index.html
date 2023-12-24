@@ -360,14 +360,14 @@
     <script>
       function showSection(sectionId) {
         document.querySelectorAll('.page-section').forEach(section => {
-          section.style.display = 'none'; // Приховати всі секції
+          section.style.display = 'none';
         });
-        document.getElementById(sectionId).style.display = 'block'; // Показати обрану секцію
+        document.getElementById(sectionId).style.display = 'block';
   
         document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
-          link.classList.remove('fw-bold'); // Видалити клас з усіх посилань
+          link.classList.remove('fw-bold'); 
         });
-        event.currentTarget.classList.add('fw-bold'); // Додати клас до активного посилання
+        event.currentTarget.classList.add('fw-bold');
       }
     </script>
     <script src="js/bootstrap.bundle.min.js"></script>
