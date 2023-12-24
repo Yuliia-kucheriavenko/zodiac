@@ -20,42 +20,84 @@ background-color: var(--color1);
   background-color: var(--color2);
   }
 
-header, footer, section {
-  padding: 100px 0;
+header {
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 }
 
-header {
-  padding: 200px 0;
+main {
+  padding-top: 80px;
+}
+
+footer, .mainscreen, .wheremeets, .about, .brochure, .videocontent, .partners, .contact {
+  padding: 80px 0;
 }
 
 .wheremeets, .about, .videocontent{
   background-color: #eee;
 }
 
-header, footer {
-  background: url(../img/roshel.jpg);
+header, footer{
+  background-color: var(--color2);
+}
+
+.itd-logo {
+  display: block;
+  width: 120px;
+  height: 60px;
+}
+
+.itd-maintitle {
+  font-size: 60px;
+  color: var(--color1);
+  margin: 20px 0;
+}
+
+.mainscreen {
+  position: relative;
+  background: url(../img/f4.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  padding: 250px 0;
 }
 
-.btn-itd{
+.mainscreen::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.mainscreen .container {
+  position: relative;
+  z-index: 1; 
+}
+
+.btn-itd {
   display: block;
-  max-width: 200px;
-  margin: 0 auto;
-  padding: 8px 30px;
+  max-width: 170px;
+  padding: 8px 24px;
+  color: var(--color1);
+  background-color: rgba(191, 191, 191, 0.7);
+  margin: 20px 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.mainscreen:hover .btn-itd {
   color: var(--color2);
   background-color: var(--color1);
-}
-
-.btn-itd:hover{
-  color: var(--color1);
-  background-color: var(--color2);
 }
 
 .videocontent-pre {
   color: var(--color3);
   font-size: 12px;
-
 }
 
 .wheremeets-title-pre {
@@ -74,6 +116,8 @@ header, footer {
   max-width: 440px;
 }
 
+
+
 .brochure{
   background-color:var(--color2);
   color: #eee;
@@ -83,4 +127,60 @@ header, footer {
   margin-top: 24px;
   display: block;
   max-width: 540px;
+}
+
+
+.btn-itd:hover,
+.mainscreen:hover .btn-itd,
+.navbar-nav .nav-link:hover,
+.navbar-brand:hover {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-collapse.collapsing {
+  transition: height 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+section {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-brand:hover,
+.btn-itd:hover {
+  opacity: 0.8;
+}
+
+.videocontent video {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .btn-itd {
+    width: 100%; 
+  }
+}
+
+@media (min-width: 769px) {
+  .navbar-nav .nav-link,
+  .navbar-brand {
+    transition: color 0.3s ease;
+  }
+}
+
+.itd-footerlogo {
+  margin: 0 auto;
+}
+
+.content-wrapper {
+  min-height: calc(100vh - 80px); 
+}
+.contacts-container {
+  padding: 150px 0 0 0 ;
 }
